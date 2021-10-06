@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Padrino.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Padrino</title>
+</head>
+<body>
+<header>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+</header>
+<div class="banner">
+    <div class="content">
+        <h2><span>El Padrino</span></h2>
+        <p>
+            Don Vito Corleone es el respetado y temido jefe de una de las cinco familias de la mafia
+            de Nueva York en los años 40. El hombre tiene cuatro hijos: Connie, Sonny, Fredo y Michael,
+            que no quiere saber nada de los negocios sucios de su padre. Cuando otro capo, Sollozzo,
+            intenta asesinar a Corleone, empieza una cruenta lucha entre los distintos clanes.
+        </p>
+        <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+    </div>
+</div>
+<div class="trailer">
+    <video src="WonderWoman.mp4" controls="true"></video>
+    <img src="close.png" alt="" class="close" onclick="toggle();">
+</div>
+<script>
+    function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+</script>
+</body>
+</html>
