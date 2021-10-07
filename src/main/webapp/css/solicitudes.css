@@ -42,14 +42,14 @@ body {
 
 
 .form-control {
-    background-color: var(--color-dark-xx);
+
     border: 2px solid var(--color-dark-xx);
     border-radius: .2rem;
     padding: 1.5rem 1rem;
 }
 
 .register-bg {
-    background-image: url('images/hero.jpg');
+    background-image: url('/images/ratatouille.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
