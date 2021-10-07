@@ -59,6 +59,17 @@ body {
     bottom: 10px
 }
 
+.form-control-lg{
+    margin:20px;
+}
+
+#comentario{
+    top: 10px;
+}
+
+.botones{
+    padding-top:50px;
+}
 @media (max-width: 575.98px) {
     .p-6 {
         padding: 2rem;
