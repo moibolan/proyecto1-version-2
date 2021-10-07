@@ -24,9 +24,9 @@
 
 
     <!--FINAL-->
-
-    <link rel="stylesheet" href="css/solicitudes.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/solicitudes.css">
+
     <link rel="stylesheet" href="css/grid.css">
     <title>Illusion Films</title>
 
@@ -101,7 +101,7 @@
 
                 <p class="text-muted mb-5">Ingresa la siguiente información para realizar el alquiler o compra.</p>
 
-                <form onsubmit="validarTodo()">
+                <form id="formulario" onsubmit="validarTodo()" method="post" action="Solicitud">
                     <div class="form-row mb-2">
                         <div class="form-group col-md-6">
                             <label class="font-weight-bold">Nombre <span class="text-danger">*</span></label>
@@ -121,23 +121,65 @@
                     <div class="form-group mb-3">
                         <input class="form-check-input" type="checkbox" id="hide" checked>
                         <label class="font-weight-bold">Tarjeta de miembro <span class="text-danger">*</span></label>
-                        <input type="number" class="form-control"  id="tarjeta"  placeholder="Ingresa su número de tarjeta" maxlength="6">
+                        <input type="text" class="form-control"  id="tarjeta" maxlength="8" placeholder="Ingresa su número de tarjeta">
                     </div>
 
                     <div class="form-group mb-3">
                         <label class="font-weight-bold">Teléfono <span class="text-danger">*</span></label>
-                        <input type="number" class="form-control" placeholder="Ingresa tu teléfono">
+                        <input type="number" class="form-control" placeholder="Ingresa tu teléfono"  maxlength="8"     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        >
                     </div>
 
                     <div class="form-group mb-5">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox">
-                            <label class="form-check-label text-muted">Al seleccionar esta casilla aceptas nuestro aviso de privacidad y los términos y condiciones</label>
+                            <label for="radioComprar">
+                                <input type="radio" id="radioComprar" name=radioVenta> Comprar
+                            </label>
+                            <label for="radioAlquilar">
+                                <input type="radio" id="radioAlquilar" name=radioVenta > Alquilar
+                            </label>
+
                         </div>
                     </div>
 
+                    <div class="form-group mb-3">
+                        <label class="font-weight-bold">Cantidad de peliculas <span class="text-danger">*</span></label>
+                        <input type="number" class="form-control" placeholder="Ingresa la cantidad" >
+                    </div>
 
                     <fieldset>
+                        <label>
+                            Preferencias:
+                        </label>
+                        <label>
+                            <input type="checkbox" value="terror" id="terror"> Terror
+                        </label>
+                        <label>
+                            <input type="checkbox" value="comedia" id="comedia"> Comedia
+                        </label>
+                        <label>
+                            <input type="checkbox" value="accion" id="accion"> Acción
+                        </label>
+                        <label>
+                            <input type="checkbox" value="fantasia" id="fantasia"> Fantasía
+                        </label>
+                        <label>
+                            <input type="checkbox" value="romanticas" id="romanticas"> Románticas
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                    <div id="comentario">
+                        <label>
+                            Información adicional:
+                        </label>
+                        <textarea class="form-control-lg" cols="50" rows="7" maxlength="255" name="textArea" id="comentariotxt">
+                </textarea>
+                    </div>
+                    </fieldset>
+
+
+                    <fieldset class="botones">
                         <input type="submit" value="Procesar" name="btnEnviar" class="btn btn-primary width-100">
                         <input type="reset" value="Limpiar formulario"  class="btn btn-secondary" name="btnLimpiar">
                         <button type="button" class="btn btn-danger"> Cancelar </button>
@@ -145,8 +187,10 @@
 
 
 
+
+
                 </form>
-                <small class="d-inline-block text-muted mt-5">Todos los derechos reservados | © 2019 Templune</small>
+                <small class="d-inline-block text-muted mt-5">Todos los derechos reservados | © 2021</small>
             </div>
         </div>
     </div>

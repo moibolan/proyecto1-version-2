@@ -1,4 +1,4 @@
-package com.proyecto1version2.ui.proyecto1version2;
+package com.proyecto1version2.ui;
 
 import java.io.*;
 import javax.servlet.http.*;

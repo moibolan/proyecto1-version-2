@@ -1,3 +1,6 @@
+
+ 
+
 function validarCorreo(campo){
     var regex = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
     if(campo.value.match(regex)){
@@ -16,6 +19,7 @@ function validarTodo(){
 }
 
 const hideBox = document.querySelector("#hide");
+
 hideBox.addEventListener("change",function(e){
     if(hideBox.checked){
         document.getElementById("tarjeta").style.display="initial";
@@ -25,4 +29,9 @@ hideBox.addEventListener("change",function(e){
 
     }
 
+});
+const tarjeta = document.querySelector("#tarjeta");
+tarjeta.addEventListener('keyup', (e) => {
+   let valorInput = e.target.value;
+   tarjeta.value = valorInput.replace(/\s/g,'').replace(/\D/g,'').replace(/([0-9]{2})/g, '$1-').replace(/\-$/, "");
 });
