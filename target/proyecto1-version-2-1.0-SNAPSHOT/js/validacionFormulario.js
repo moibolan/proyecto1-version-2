@@ -16,6 +16,7 @@ function validarTodo(){
         return true;
     }
     return false;
+
 }
 
 const hideBox = document.querySelector("#hide");
@@ -35,3 +36,4 @@ tarjeta.addEventListener('keyup', (e) => {
    let valorInput = e.target.value;
    tarjeta.value = valorInput.replace(/\s/g,'').replace(/\D/g,'').replace(/([0-9]{2})/g, '$1-').replace(/\-$/, "");
 });
+
