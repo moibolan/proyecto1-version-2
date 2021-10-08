@@ -13,6 +13,8 @@ public class Cliente implements Serializable {
     int cantidad;
     String nombrePelicula;
     int precioPelicula;
+    String descuentoPelicula;
+    double total;
 
     public Cliente(){
 
