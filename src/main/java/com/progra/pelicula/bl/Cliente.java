@@ -6,19 +6,26 @@ public class Cliente implements Serializable {
     String nombre;
     String apellido;
     String correo;
-    int tarjeta;
+    String tarjeta;
     int telefono;
+    String preferencias;
+    String informacion;
+    int cantidad;
 
     public Cliente(){
 
     }
 
-    public Cliente(String nombre, String apellido, String correo, int tarjeta, int telefono) {
+    public Cliente(String nombre, String apellido, String correo, String tarjeta, int telefono, String preferencias, String informacion, int cantidad) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
         this.tarjeta = tarjeta;
         this.telefono = telefono;
+        this.preferencias = preferencias;
+        this.informacion = informacion;
+        this.cantidad = cantidad;
+
     }
 
     public String getNombre() {
@@ -45,11 +52,11 @@ public class Cliente implements Serializable {
         this.correo = correo;
     }
 
-    public int getTarjeta() {
+    public String getTarjeta() {
         return tarjeta;
     }
 
-    public void setTarjeta(int tarjeta) {
+    public void setTarjeta(String tarjeta) {
         this.tarjeta = tarjeta;
     }
 
@@ -60,4 +67,16 @@ public class Cliente implements Serializable {
     public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
+
+    public String getPreferencias() {return preferencias;}
+
+    public void setPreferencias(String preferencias) {this.preferencias = preferencias;}
+
+    public String getInformacion() {return informacion;}
+
+    public void setInformacion(String informacion) {this.informacion = informacion;}
+
+    public int getCantidad() {return cantidad;}
+
+    public void setCantidad(int cantidad) {this.cantidad = cantidad;}
 }

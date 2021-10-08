@@ -432,6 +432,7 @@ a.movie-item:hover {
     left: 0;
     width: 100%;
     transition: transform 0.3s linear;
+    
 }
 
 .movie-item:hover img {
@@ -737,12 +738,16 @@ footer .content {
     height: 180px;
     border-radius: 10px 10px 0 0;
 }
+
 .movieList{
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
 }
+
 .movieItem{
+    width: 134px;
+    height: 215px;
     background-color: black;
     text-align: center;
     border: 0.5px solid #166dab ;

@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -101,7 +102,7 @@
 
                 <p class="text-muted mb-5">Ingresa la siguiente información para realizar el alquiler o compra.</p>
 
-                <form id="formulario" onsubmit="validarTodo()" method="post" action="Solicitud" name="formulario">
+                <form id="formulario" name="formulario" onsubmit="validarTodo()" method="post" action="Solicitud" >
                     <div class="form-row mb-2">
                         <div class="form-group col-md-6">
                             <label class="font-weight-bold">Nombre <span class="text-danger">*</span></label>
@@ -144,7 +145,7 @@
 
                     <div class="form-group mb-3">
                         <label class="font-weight-bold">Cantidad de peliculas <span class="text-danger">*</span></label>
-                        <input type="number" class="form-control" placeholder="Ingresa la cantidad" >
+                        <input type="number" class="form-control" placeholder="Ingresa la cantidad" id="cantidad" name="cantidad">
                     </div>
 
                     <fieldset>
@@ -152,32 +153,34 @@
                             Preferencias:
                         </label>
                         <label>
-                            <input type="checkbox" value="terror" id="terror" name="preferencia">  Terror
+                            <input type="checkbox" value="terror" id="terror" name="preferencia1"> Terror
                         </label>
                         <label>
-                            <input type="checkbox" value="comedia" id="comedia" name="preferencia"> Comedia
+                            <input type="checkbox" value="comedia" id="comedia" name="preferencia2"> Comedia
                         </label>
                         <label>
-                            <input type="checkbox" value="accion" id="accion" name="preferencia"> Acción
+                            <input type="checkbox" value="accion" id="accion" name="preferencia3"> Acción
                         </label>
                         <label>
-                            <input type="checkbox" value="fantasia" id="fantasia" name="preferencia"> Fantasía
+                            <input type="checkbox" value="fantasia" id="fantasia" name="preferencia4"> Fantasía
                         </label>
                         <label>
-                            <input type="checkbox" value="romanticas" id="romanticas" name="preferencia"> Románticas
+                            <input type="checkbox" value="romanticas" id="romanticas" name="preferencia5"> Románticas
                         </label>
                     </fieldset>
 
-<!--                    <span id="res"></span>-->
+
+
+
 
                     <fieldset>
-                    <div id="comentario">
-                        <label>
-                            Información adicional:
-                        </label>
-                        <textarea class="form-control-lg" cols="50" rows="7" maxlength="255" name="textArea" id="comentariotxt">
+                        <div id="comentario">
+                            <label>
+                                Información adicional:
+                            </label>
+                            <textarea class="form-control-lg" cols="50" rows="7" maxlength="255" name="informacion" id="informacion">
                 </textarea>
-                    </div>
+                        </div>
                     </fieldset>
 
 

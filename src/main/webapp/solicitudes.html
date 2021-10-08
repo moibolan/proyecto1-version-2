@@ -101,32 +101,32 @@
 
                 <p class="text-muted mb-5">Ingresa la siguiente información para realizar el alquiler o compra.</p>
 
-                <form id="formulario" onsubmit="validarTodo()" method="post" action="Solicitud">
+                <form id="formulario" onsubmit="validarTodo()" method="post" action="Solicitud" name="formulario">
                     <div class="form-row mb-2">
                         <div class="form-group col-md-6">
                             <label class="font-weight-bold">Nombre <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" placeholder="Tu nombre" required>
+                            <input type="text" class="form-control" name="nombre" placeholder="Tu nombre" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label class="font-weight-bold">Apellido <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" placeholder="Tu apellido">
+                            <input type="text" class="form-control" name="apellido" placeholder="Tu apellido">
                         </div>
                     </div>
                     <div class="form-group mb-3">
                         <label class="font-weight-bold">Correo electrónico <span class="text-danger">*</span></label>
-                        <input  class="form-control" placeholder="Ingresa tu correo electrónico" id="correo" required >
+                        <input  class="form-control" placeholder="Ingresa tu correo electrónico" id="correo" name="correo" required >
                     </div>
 
 
                     <div class="form-group mb-3">
                         <input class="form-check-input" type="checkbox" id="hide" checked>
                         <label class="font-weight-bold">Tarjeta de miembro <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control"  id="tarjeta" maxlength="8" placeholder="Ingresa su número de tarjeta">
+                        <input type="text" class="form-control"  id="tarjeta" maxlength="8" name="tarjeta" placeholder="Ingresa su número de tarjeta">
                     </div>
 
                     <div class="form-group mb-3">
                         <label class="font-weight-bold">Teléfono <span class="text-danger">*</span></label>
-                        <input type="number" class="form-control" placeholder="Ingresa tu teléfono"  maxlength="8"     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        <input type="number" class="form-control" placeholder="Ingresa tu teléfono"  maxlength="8"   name="telefono"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                         >
                     </div>
 
@@ -152,21 +152,23 @@
                             Preferencias:
                         </label>
                         <label>
-                            <input type="checkbox" value="terror" id="terror"> Terror
+                            <input type="checkbox" value="terror" id="terror" name="preferencia">  Terror
                         </label>
                         <label>
-                            <input type="checkbox" value="comedia" id="comedia"> Comedia
+                            <input type="checkbox" value="comedia" id="comedia" name="preferencia"> Comedia
                         </label>
                         <label>
-                            <input type="checkbox" value="accion" id="accion"> Acción
+                            <input type="checkbox" value="accion" id="accion" name="preferencia"> Acción
                         </label>
                         <label>
-                            <input type="checkbox" value="fantasia" id="fantasia"> Fantasía
+                            <input type="checkbox" value="fantasia" id="fantasia" name="preferencia"> Fantasía
                         </label>
                         <label>
-                            <input type="checkbox" value="romanticas" id="romanticas"> Románticas
+                            <input type="checkbox" value="romanticas" id="romanticas" name="preferencia"> Románticas
                         </label>
                     </fieldset>
+
+<!--                    <span id="res"></span>-->
 
                     <fieldset>
                     <div id="comentario">
