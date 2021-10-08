@@ -12,28 +12,44 @@
 </header>
 <div class="banner">
     <div class="content">
-        <h2><span>El Padrino</span></h2>
-        <p>
-            Don Vito Corleone es el respetado y temido jefe de una de las cinco familias de la mafia
-            de Nueva York en los años 40. El hombre tiene cuatro hijos: Connie, Sonny, Fredo y Michael,
-            que no quiere saber nada de los negocios sucios de su padre. Cuando otro capo, Sollozzo,
-            intenta asesinar a Corleone, empieza una cruenta lucha entre los distintos clanes.
-        </p>
-        <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        <h2 class="title">El PADRINO </h2>
+       <div class="sinopsis">
+           <h3 class="subtitle">Sinopsis </h3>
+           <p>
+               Don Vito Corleone es el respetado y temido jefe de una de las cinco familias de la mafia
+               de Nueva York en los años 40. El hombre tiene cuatro hijos: Connie, Sonny, Fredo y Michael,
+               que no quiere saber nada de los negocios sucios de su padre. Cuando otro capo, Sollozzo,
+               intenta asesinar a Corleone, empieza una cruenta lucha entre los distintos clanes.
+           </p>
+       </div>
+
+        <div class="poster">
+
+        </div>
+
+        <div class="reparto">
+            <h3 class="subtitle">Reparto </h3>
+
+        </div>
+
+        <div class="premios">
+            <h3 class="subtitle">Premios </h3>
+            <p>
+                Hola 2
+            </p>
+        </div>
+
+        <div class="avance">
+            <h3 class="subtitle">Trailer </h3>
+            <p>
+                Hola 2
+            </p>
+        </div>
+
+
     </div>
 </div>
-<div class="trailer">
-    <video src="WonderWoman.mp4" controls="true"></video>
-    <img src="close.png" alt="" class="close" onclick="toggle();">
-</div>
-<script>
-    function toggle(){
-        var trailer=document.querySelector('.trailer');
-        let video=document.querySelector('.video');
-        trailer.classList.toggle('active');
-        video.currentTime = 0;
-        video.pause();
-    }
-</script>
+
+
 </body>
 </html>
