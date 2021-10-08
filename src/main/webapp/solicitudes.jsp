@@ -36,7 +36,7 @@
 
 
 
-<body>
+<body onload="getQueryVariableName('nombre'),getQueryVariablePrecio('precio')"; >
 
 
 <!-- NAV -->
@@ -127,8 +127,7 @@
 
                     <div class="form-group mb-3">
                         <label class="font-weight-bold">Teléfono <span class="text-danger">*</span></label>
-                        <input type="number" class="form-control" placeholder="Ingresa tu teléfono"  maxlength="8"   name="telefono"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                        >
+                        <input type="number" class="form-control" placeholder="Ingresa tu teléfono"  maxlength="8"   name="telefono"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
                     </div>
 
                     <div class="form-group mb-5">
@@ -146,7 +145,15 @@
                     <div class="form-group mb-3">
                         <label class="font-weight-bold">Cantidad de peliculas <span class="text-danger">*</span></label>
                         <input type="number" class="form-control" placeholder="Ingresa la cantidad" id="cantidad" name="cantidad">
+
+
+                        <input type="hidden" name="test" id="test">
+                        <input type="hidden" name="test2" id="test2">
+
                     </div>
+
+
+
 
                     <fieldset>
                         <label>
@@ -192,8 +199,6 @@
 
 
 
-
-
                 </form>
                 <small class="d-inline-block text-muted mt-5">Todos los derechos reservados | © 2021</small>
             </div>
@@ -202,21 +207,6 @@
 </section>
 
 <!--FINAL FORMULARIO-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -299,7 +289,7 @@
 <!-- JQUERY -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-
+<script src="js/url.js"></script>
 <!-- APP SCRIPT -->
 <script src="js/app.js"></script>
 <script src="js/validacionFormulario.js"></script>

@@ -1,6 +1,7 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:useBean id="Cliente" scope="request" class="com.progra.pelicula.bl.Cliente"/>
+
 <html>
 <head>
     <title>Resultado Solicitud</title>
@@ -14,8 +15,8 @@
     <div><%=Cliente.getPreferencias()%></div>
     <div><%=Cliente.getInformacion()%></div>
     <div><%=Cliente.getCantidad()%></div>
-
-
+    <div><%=Cliente.getNombrePelicula()%></div>
+    <div><%=Cliente.getPrecioPelicula()%></div>
 
 </body>
 </html>

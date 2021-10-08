@@ -11,12 +11,14 @@ public class Cliente implements Serializable {
     String preferencias;
     String informacion;
     int cantidad;
+    String nombrePelicula;
+    int precioPelicula;
 
     public Cliente(){
 
     }
 
-    public Cliente(String nombre, String apellido, String correo, String tarjeta, int telefono, String preferencias, String informacion, int cantidad) {
+    public Cliente(String nombre, String apellido, String correo, String tarjeta, int telefono, String preferencias, String informacion, int cantidad, String nombrePelicula, int precioPelicula) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
@@ -25,6 +27,8 @@ public class Cliente implements Serializable {
         this.preferencias = preferencias;
         this.informacion = informacion;
         this.cantidad = cantidad;
+        this.nombrePelicula = nombrePelicula;
+        this.precioPelicula = precioPelicula;
 
     }
 
@@ -79,4 +83,12 @@ public class Cliente implements Serializable {
     public int getCantidad() {return cantidad;}
 
     public void setCantidad(int cantidad) {this.cantidad = cantidad;}
+
+    public String getNombrePelicula() {return nombrePelicula;}
+
+    public void setNombrePelicula(String nombrePelicula) {this.nombrePelicula = nombrePelicula;}
+
+    public int getPrecioPelicula() {return precioPelicula;}
+
+    public void setPrecioPelicula(int precioPelicula) {this.precioPelicula = precioPelicula;}
 }

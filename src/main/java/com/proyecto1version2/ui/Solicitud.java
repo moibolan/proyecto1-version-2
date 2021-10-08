@@ -1,6 +1,7 @@
 package com.proyecto1version2.ui;
 
 import com.progra.pelicula.bl.Cliente;
+import com.progra.pelicula.bl.Pelicula;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -21,6 +22,9 @@ public class Solicitud extends HttpServlet {
          String informacion;
         int telefono;
         int cantidad;
+        String nombrePelicula;
+        int precioPelicula;
+
 
 //         El getParameter va a buscar en el formulario por "name"
 // <input type="text" class="form-control" name="nombre" placeholder="Tu nombre" required>
@@ -41,7 +45,8 @@ public class Solicitud extends HttpServlet {
         preferencias = preferencia1+" "+preferencia2+" "+preferencia3+" "+preferencia4+" "+preferencia5;
 
         informacion = request.getParameter("informacion");
-
+        nombrePelicula = request.getParameter("test");
+       precioPelicula =  Integer.parseInt(request.getParameter("test2"));
 
         Cliente cliente = new Cliente();
         cliente.setNombre(nombre);
@@ -52,11 +57,13 @@ public class Solicitud extends HttpServlet {
         cliente.setPreferencias(preferencias);
         cliente.setInformacion(informacion);
         cliente.setCantidad(cantidad);
+        cliente.setNombrePelicula(nombrePelicula);
+        cliente.setPrecioPelicula(precioPelicula);
 
 
 
-        request.setAttribute("Cliente", cliente);
-        request.getRequestDispatcher("mostrarSolicitud.jsp").forward(request, response);
+       request.setAttribute("Cliente", cliente);
+       request.getRequestDispatcher("mostrarSolicitud.jsp").forward(request, response);
 
     }
 }
