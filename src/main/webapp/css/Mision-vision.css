@@ -7,12 +7,12 @@
 }
 
 .u-section-1 .u-layout-wrap-1 {
-  width: 1140px;
+  width:auto;
   margin: 60px auto;
 }
 
 .u-section-1 .u-layout-cell-1 {
-  min-height: 638px;
+  min-height:auto;
 }
 
 .u-section-1 .u-container-layout-1 {
@@ -171,7 +171,7 @@
 }
 
 .u-section-2 .u-container-layout-2 {
-  padding: 30px 60px;
+  padding: auto;
 }
 
 .u-section-2 .u-text-1 {
@@ -237,6 +237,7 @@
   .u-section-2 .u-container-layout-2 {
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
   }
 
   .u-section-2 .u-container-layout-3 {
