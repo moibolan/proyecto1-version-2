@@ -50,11 +50,11 @@
             </a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="home.html">Inicio</a></li>
-                <li><a href="#">Catálogo</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="#">Acerda de </a>
                     <ul>
-                        <li><a href="#">Nuestra Historia</a></li>
-                        <li><a href="#">Misión y Visión</a></li>
+                        <li><a href="historia.html">Nuestra Historia</a></li>
+                        <li><a href="Mision-vision.html">Misión y Visión</a></li>
                         <li><a href="#">Visítenos</a></li>
                     </ul>
                 <li><a href="#">Contactenos</a></li>
