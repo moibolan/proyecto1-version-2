@@ -107,12 +107,8 @@ header{
 
 .avance{
     background-color: #1f232b;
-    width: 290px;
-    height: 250px;
+    background: url(Schindler.mp4);
     float: left;
-    margin-bottom: 15px;
-    margin-right: 30px;
-
 }
 
 

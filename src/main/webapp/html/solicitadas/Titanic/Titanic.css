@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color: #ffffff;
+    color: #f5f6f8;
     text-align: justify;
 }
 header{
@@ -106,12 +106,8 @@ header{
 
 .avance{
     background-color: #1f232b;
-    width: 290px;
-    height: 250px;
+    background: url(Titanic.mp4);
     float: left;
-    margin-bottom: 15px;
-    margin-right: 30px;
-
 }
 
 
