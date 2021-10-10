@@ -25,9 +25,10 @@
 
 
     <!--FINAL-->
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/solicitudes.css">
 
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="stylesheet" href="css/solicitudes.css">
     <link rel="stylesheet" href="css/grid.css">
     <title>Illusion Films</title>
 
@@ -120,7 +121,7 @@
 
 
                     <div class="form-group mb-3">
-                        <input class="form-check-input" type="checkbox" id="hide" checked>
+                        <input class="form-check-input" type="checkbox" id="hide" name="descuento" checked>
                         <label class="font-weight-bold">Tarjeta de miembro <span class="text-danger">*</span></label>
                         <input type="text" class="form-control"  id="tarjeta" maxlength="8" name="tarjeta" placeholder="Ingresa su número de tarjeta">
                     </div>
@@ -149,6 +150,7 @@
 
                         <input type="hidden" name="test" id="test">
                         <input type="hidden" name="test2" id="test2">
+
 
                     </div>
 

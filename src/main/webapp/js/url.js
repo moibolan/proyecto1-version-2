@@ -1,7 +1,7 @@
 function getQueryVariableName(variable) {
     var query = window.location.search.substring(1);
     var vars = query.split("&");
-    alert(vars);
+
     for (var i=0; i < vars.length; i++) {
         var pair = vars[i].split("=");
         if(pair[0] == variable) {
@@ -17,7 +17,7 @@ function getQueryVariableName(variable) {
 function getQueryVariablePrecio(variable) {
     var query = window.location.search.substring(1);
     var vars = query.split("&");
-    alert(vars);
+
     for (var i=0; i < vars.length; i++) {
         var pair = vars[i].split("=");
         if(pair[0] == variable) {

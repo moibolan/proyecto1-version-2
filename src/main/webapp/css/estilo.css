@@ -77,6 +77,7 @@ img {
     position: absolute;
     min-width: 140px;
     color: var(--main-color);
+    list-style-type: none;
 
 }
 
@@ -114,6 +115,9 @@ img {
 .nav-menu li ~ li {
     margin-left: 30px;
 }
+
+
+
 
 .nav-menu a {
     text-transform: uppercase;
@@ -919,8 +923,6 @@ footer .content {
     .nav-menu.active {
         left: 0;
     }
-
-
 
 
 

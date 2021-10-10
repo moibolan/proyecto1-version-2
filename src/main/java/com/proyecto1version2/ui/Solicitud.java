@@ -24,6 +24,7 @@ public class Solicitud extends HttpServlet {
         int cantidad;
         String nombrePelicula;
         int precioPelicula;
+        String descuento;
 
 
 //         El getParameter va a buscar en el formulario por "name"
@@ -44,9 +45,14 @@ public class Solicitud extends HttpServlet {
 
         preferencias = preferencia1+" "+preferencia2+" "+preferencia3+" "+preferencia4+" "+preferencia5;
 
+        descuento = request.getParameter("descuento");
+
         informacion = request.getParameter("informacion");
         nombrePelicula = request.getParameter("test");
-       precioPelicula =  Integer.parseInt(request.getParameter("test2"));
+        precioPelicula =  Integer.parseInt(request.getParameter("test2"));
+
+
+
 
         Cliente cliente = new Cliente();
         cliente.setNombre(nombre);
@@ -59,8 +65,10 @@ public class Solicitud extends HttpServlet {
         cliente.setCantidad(cantidad);
         cliente.setNombrePelicula(nombrePelicula);
         cliente.setPrecioPelicula(precioPelicula);
+        cliente.setDescuentoPelicula(descuento);
 
-
+//        System.out.println(cliente.getDescuentoPelicula());
+//        System.out.println(cliente.calcularTotal());
 
        request.setAttribute("Cliente", cliente);
        request.getRequestDispatcher("mostrarSolicitud.jsp").forward(request, response);
