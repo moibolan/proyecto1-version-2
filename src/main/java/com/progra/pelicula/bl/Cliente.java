@@ -1,6 +1,7 @@
 package com.progra.pelicula.bl;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class Cliente implements Serializable {
     String nombre;
@@ -20,7 +21,7 @@ public class Cliente implements Serializable {
 
     }
 
-    public Cliente(String nombre, String apellido, String correo, String tarjeta, int telefono, String preferencias, String informacion, int cantidad, String nombrePelicula, int precioPelicula) {
+    public Cliente(String nombre, String apellido, String correo, String tarjeta, int telefono, String preferencias, String informacion, int cantidad, String nombrePelicula, int precioPelicula, String descuentoPelicula, double total) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
@@ -31,6 +32,8 @@ public class Cliente implements Serializable {
         this.cantidad = cantidad;
         this.nombrePelicula = nombrePelicula;
         this.precioPelicula = precioPelicula;
+        this.descuentoPelicula = descuentoPelicula;
+        this.total = total;
 
     }
 
@@ -93,4 +96,35 @@ public class Cliente implements Serializable {
     public int getPrecioPelicula() {return precioPelicula;}
 
     public void setPrecioPelicula(int precioPelicula) {this.precioPelicula = precioPelicula;}
+
+    public String getDescuentoPelicula() {return descuentoPelicula;}
+
+    public void setDescuentoPelicula(String descuentoPelicula) {this.descuentoPelicula = descuentoPelicula;}
+
+    public double getTotal() {return total;}
+
+    public void setTotal(double total) {this.total = total;}
+
+    public double calcularTotal(){
+        double total;
+
+        System.out.println("LLEGAMOS");
+        System.out.println("VAMOS " + descuentoPelicula);
+
+
+        if(Objects.equals(descuentoPelicula, "on")){
+            System.out.println("ESTAMOS EN ON");
+            total = cantidad * precioPelicula;
+            total = total - total * 0.05;
+            return total;
+        }else{
+            System.out.println("NO ESTAMOS EN ON");
+            total = cantidad * precioPelicula;
+            return total;
+        }
+
+
+
+    }
+
 }
