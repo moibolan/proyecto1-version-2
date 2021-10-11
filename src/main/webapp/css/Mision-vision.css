@@ -180,6 +180,11 @@
   margin: 0 auto;
 }
 
+.u-section-1 .u-textt-1 {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
 .u-section-2 .u-layout-cell-3 {
   min-height: 315px;
 }
