@@ -49,7 +49,7 @@ body {
 }
 
 .register-bg {
-    background-image: url('/images/ratatouille.jpg');
+    background-image: url(data:image/soul.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
