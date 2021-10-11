@@ -58,7 +58,7 @@
                     <ul>
                         <li><a href="historia.html">Nuestra Historia</a></li>
                         <li><a href="Mision-vision.html">Misión y Visión</a></li>
-                        <li><a href="#">Visítenos</a></li>
+                        <li><a href="visitenos.html">Visítenos</a></li>
                     </ul>
                 <li><a href="#">Contactenos</a></li>
 
